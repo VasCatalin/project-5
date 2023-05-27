@@ -75,7 +75,7 @@
 /* ./header-bottom */
 
 /* content */
-/* article */
+/* category */
 .category-title {
   font-size: 35px;
   font-weight: bold;
@@ -83,38 +83,38 @@
   margin-top: 35px;
 }
 
-.new-stuff {
+.category-section {
   display: flex;
   justify-content: space-between;
 }
 
-.article {
+.category {
   text-align: center;
   color: inherit;
   margin: 35px 0 70px 0;
 }
 
-.article-img {
+.category-img {
   width: 321px;
 }
 
-.article-name {
+.category-name {
   font-size: 22px;
   font-weight: bold;
   margin-top: 15px;
 }
 
-.article-price {
+.category-price {
   font-size: 22px;
   margin-top: 15px;
 }
 
-.article-btn {
+.category-btn {
   display: flex;
   justify-content: center;
   margin-bottom: 120px;
 }
-/* ./article */
+/* ./category */
 
 /* cat-about */
 .category-about {
