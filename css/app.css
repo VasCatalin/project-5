@@ -170,20 +170,26 @@
 
 .footer-socials-ico li {
   display: inline;
+  margin-right: 15px;
 }
 
 .footer-email {
-    height: 25px;
-    margin: 10px 0;
+  height: 25px;
+  margin: 10px 0;
 }
 
 .footer-btn {
-    font-size: 12px;
-    padding: 5px 15px;
-    margin-bottom: 20px;
+  font-size: 14px;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+  border: px solid #2b2b2b;
+  font-family: inherit;
+  text-transform: uppercase;
 }
 
-.footer-1 a, .footer-2 a, .footer-3 a {
-    line-height: 30px;
+.footer-1 a,
+.footer-2 a,
+.footer-3 a {
+  line-height: 30px;
 }
 /* ./footer */
