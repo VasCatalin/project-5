@@ -1,242 +1,189 @@
-/* reset css */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+.header {
+  background-image: linear-gradient(
+      0deg,
+      rgba(43, 43, 43, 1) 10%,
+      rgba(0, 0, 0, 0) 10%
+    ),
+    url("/img/page-1/banner.png");
+  height: 500px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* !!!sa traiasca jocul cu broastele!!! */
+}
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+/* header-top */
+.header-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* ./reset css */
 
-/* fonts */
-@font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/PlayfairDisplay-ExtraBold.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-ExtraBold.woff") format("woff");
+.header-socials li {
+  display: inline;
+  margin-left: 30px;
+  color: #ffffff;
+}
+
+.header-socials a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header-controls li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.header-controls a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-controls ul li:nth-child(1) {
+  border: 1px solid black;
+  padding: 5px 130px 5px 10px;
+  border-radius: 1px;
+}
+/* ./header-top */
+
+/* header-bottom */
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #2b2b2b;
+  background: #2b2b2b;
+  padding: 14px 0;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #e8e8e8;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+/* ./header-bottom */
+
+/* content */
+/* article */
+.category-title {
+  font-size: 35px;
   font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+  text-align: center;
+  margin-top: 35px;
 }
 
-@font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-BoldItalic.woff") format("woff");
+.new-stuff {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  text-align: center;
+  color: inherit;
+  margin: 35px 0 70px 0;
+}
+
+.article-img {
+  width: 321px;
+}
+
+.article-name {
+  font-size: 22px;
   font-weight: bold;
-  font-style: italic;
-  font-display: swap;
+  margin-top: 15px;
 }
 
-@font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/PlayfairDisplay-Italic.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
+.article-price {
+  font-size: 22px;
+  margin-top: 15px;
 }
 
-@font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/PlayfairDisplay-Black.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+.article-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+/* ./article */
+
+/* cat-about */
+.category-about {
+  display: flex;
+  align-items: center;
+  margin: 75px 0;
 }
 
-@font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/PlayfairDisplay-SemiBold.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+.category-about-img {
+  width: 666px;
 }
 
-@font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-Bold.woff") format("woff");
+.category-about-text {
+  margin-left: 120px;
+}
+
+.category-about-text h1 {
+  text-align: center;
+  font-size: 44px;
   font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+  color: inherit;
+  margin-bottom: 40px;
 }
 
-@font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/PlayfairDisplay-ExtraBoldItalic.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-ExtraBoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
+.category-about-text p {
+  margin-bottom: 70px;
+  font-size: 22px;
+  font-weight: lighter;
+  line-height: 40px;
+}
+/* ./cat-about */
+/* ./content */
+
+/* footer */
+.footer-bg {
+  width: 100%;
+  max-width: 1920px;
+  background: #e8e8e8;
+  margin: 0 auto;
 }
 
-@font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
 }
 
-@font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/PlayfairDisplay-SemiBoldItalic.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-SemiBoldItalic.woff") format("woff");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
+.footer a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 22px;
 }
 
-@font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/PlayfairDisplay-BlackItalic.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-BlackItalic.woff") format("woff");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
+.footer-socials-ico li {
+  display: inline;
 }
 
-@font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/PlayfairDisplay-MediumItalic.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-MediumItalic.woff") format("woff");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
+.footer-email {
+    height: 25px;
+    margin: 10px 0;
 }
 
-@font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/PlayfairDisplay-Medium.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+.footer-btn {
+    font-size: 12px;
+    padding: 5px 15px;
+    margin-bottom: 20px;
 }
-/* ./fonts */
 
+.footer-1 a, .footer-2 a, .footer-3 a {
+    line-height: 30px;
+}
+/* ./footer */
