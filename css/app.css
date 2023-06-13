@@ -103,7 +103,8 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  scale: 2;
+  scale: 1.5;
+  color: #2b2b2b;
 }
 
 .product-tile-img {
@@ -122,7 +123,7 @@
 }
 /* ./product-tile */
 
-/* cat-about */
+/* home-content */
 .home-content {
   display: flex;
   align-items: center;
@@ -151,7 +152,7 @@
   font-weight: lighter;
   line-height: 40px;
 }
-/* ./cat-about */
+/* ./home-content */
 /* ./content */
 
 /* footer */
